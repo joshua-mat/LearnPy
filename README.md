@@ -1,2 +1,2 @@
-# chatbot
-Standalone chatbot project to learn about AI chatbots with go
+# LearnPy
+Learning python for tensorflow Progress repo

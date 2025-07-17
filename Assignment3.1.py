@@ -4,14 +4,17 @@ try:
     h = float(hrs)
     r = float(rate)
 except:
-    print("Invalid input")
+    print("Invalid input: enter numerical value")
     quit()
 
-if h > 40 :
-    reg = h * r
-    ot = (h-40)*(r*0.5)
-    xp = reg + ot
-else:
-    xp = h * r
-print('pay',xp)
+nr = 1.5 * r
+pay = 40 * r
+if h <= 40 :
+    pay = h * r
+    print(pay)
+elif h > 40 :
+    ot = h - 40
+    np = ot * nr
+    pay = pay + np
+    print(pay)
 

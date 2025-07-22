@@ -1,2 +1,3 @@
-x = 'From marquard@uct.ac.za'
-print(x[14:17])
+# x = 'From marquard@uct.ac.za'
+x = list(range(5))
+print(x)

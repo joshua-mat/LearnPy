@@ -8,9 +8,9 @@ smallest = None
 
 while True:
     num = input("Enter number:")
-    if num == 'done' :
-        break
     try:
+        if num == 'done' :
+            break
         n = int(num)
         if smallest is None or n < smallest:
             smallest = n

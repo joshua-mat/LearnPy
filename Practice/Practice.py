@@ -1,13 +1,7 @@
-# Given two integer numbers, write a Python program to return their product only if
-#the product is equal to or lower than 1000. Otherwise, return their sum.
-#Given : Number 1 = 60
-#        Number 2 = 30
+keys = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+# for i in (len(keys)):
+#     res_dict.update({keys[i]: values[i]})
+res_dict = dict(zip(keys, values))
 
-x = 40
-y = 30
-p = x * y
-s = x +y
-if p <= 1000 :
-    print(p)
-else :
-    print(s)
+print(res_dict)

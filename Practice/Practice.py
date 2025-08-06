@@ -1,7 +1,12 @@
-keys = ['Ten', 'Twenty', 'Thirty']
-values = [10, 20, 30]
-# for i in (len(keys)):
-#     res_dict.update({keys[i]: values[i]})
-res_dict = dict(zip(keys, values))
+import numbers
 
-print(res_dict)
+def solution(numbers):
+    sol = []
+    for i in range(len(numbers)-2):
+        if numbers[i] > numbers[i+1] & numbers[i+1] < numbers[i+2]:
+           sol.append(1)
+        elif numbers[i] < numbers[i+1] & numbers[i+1] > numbers[i+2]:
+            sol.append(1)
+        else:
+            sol.append(0)
+    return sol

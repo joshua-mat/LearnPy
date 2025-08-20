@@ -6,7 +6,7 @@
 import email
 #open file
 emailCount = dict()
-fname = input("Enter a file name: ")
+fname = "mbox-short.txt"
 #catch invalid file names
 try:
     fh = open(fname)
@@ -18,6 +18,8 @@ for line in fh:
     #filter out lines starting ith From
     if line.startswith("From "):
         #Split "from" line and capture email into variable
+        num = line[line.find('@')+1:line.isspace()]
+        print(num)
         email = line.split()[1]
         #add emails to dictionary and add count for every occurrence using idiom
         emailCount[email] = emailCount.get(email, 0) + 1
